@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Double Double",
+    "description": "A classic Tim Hortons coffee with two creams and two sugars.",
+    "price": 2.49,
+    "imageName": "double_double"
+  },
+  {
+    "id": 2,
+    "name": "Iced Capp",
+    "description": "A smooth and creamy blended frozen coffee drink.",
+    "price": 4.29,
+    "imageName": "iced_capp"
+  },
+  {
+    "id": 3,
+    "name": "Vanilla Latte",
+    "description": "Rich espresso combined with steamed milk and sweet vanilla flavour.",
+    "price": 4.49,
+    "imageName": "vanilla_latte"
+  }
+]
