@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -11,16 +12,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp2">
+
+        <!--
+            SplashActivity is the application's launcher activity.
+            It appears briefly when the app starts and then
+            navigates automatically to MainActivity.
+        -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".SplashActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <!--
+            MainActivity displays the coffee menu after
+            the splash screen has completed.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--
+            Displays complete information about a selected coffee
+            and allows the user to select a quantity.
+        -->
+        <activity
+            android:name=".CoffeeDetailActivity"
+            android:exported="false" />
+
+        <!--
+            Displays products selected by the user and
+            calculates the complete shopping cart total.
+        -->
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+
+        <!--
+            Displays confirmation after the customer
+            successfully completes an order.
+        -->
+        <activity
+            android:name=".OrderConfirmationActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

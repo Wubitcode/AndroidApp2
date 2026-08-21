@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Shopping cart screen.
+
+    This layout displays:
+    - All products currently stored in the shopping cart.
+    - The calculated order total.
+    - An option to continue shopping without clearing the cart.
+    - An option to place and complete the order.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical">
+
+    <!--
+        Header section displayed at the top of the shopping cart.
+        It identifies the current screen and provides a short description.
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C8102E"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cart_title"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/cart_subtitle"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!--
+        Displays the individual products currently stored
+        in the shopping cart using CartAdapter.
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <!--
+        Displayed only when the shopping cart does not
+        currently contain any products.
+    -->
+    <TextView
+        android:id="@+id/emptyCartTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/cart_empty"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <!--
+        Shopping cart summary section.
+
+        Displays the final calculated total and provides actions
+        for continuing to shop or completing the order.
+    -->
+    <LinearLayout
+        android:id="@+id/cartSummaryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Displays the calculated total price of all cart products. -->
+        <TextView
+            android:id="@+id/cartTotalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: $0.00"
+            android:textColor="#202020"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!--
+            Returns the user to the main coffee menu without
+            removing any products already stored in the cart.
+        -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continueShoppingButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/continue_shopping"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--
+            Completes the current order and navigates
+            to the order confirmation screen.
+        -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/placeOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/place_order"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

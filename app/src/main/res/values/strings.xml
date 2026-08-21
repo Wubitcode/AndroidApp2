@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">AndroidApp2</string>
+
+    <string name="app_name">Tim Hortons Coffee</string>
+
+    <!-- Text displayed on the main coffee menu. -->
+    <string name="menu_title">Our Coffee</string>
+    <string name="menu_subtitle">Choose your favourite drink</string>
+    <string name="view_details">View Details</string>
+    <string name="coffee_image">Coffee product image</string>
+
+    <!-- Text displayed on the coffee detail screen. -->
+    <string name="quantity_label">Quantity</string>
+    <string name="decrease_quantity">−</string>
+    <string name="increase_quantity">+</string>
+    <string name="add_to_cart">Add to Cart</string>
+
+    <!-- Text displayed on the shopping cart screen. -->
+    <string name="cart_title">Your Cart</string>
+    <string name="cart_subtitle">Review your order</string>
+    <string name="cart_empty">Your cart is empty.</string>
+    <string name="place_order">Place Order</string>
+
+    <!-- Text displayed after an order is completed successfully. -->
+    <string name="order_success_title">Order Placed!</string>
+    <string name="order_success_message">Thank you. Your coffee order has been received.</string>
+    <string name="back_to_menu">Back to Coffee Menu</string>
+
+    <!-- Text displayed on the application splash screen. -->
+    <string name="splash_title">Tim Hortons Coffee</string>
+    <string name="splash_subtitle">Your favourite coffee, ready to order.</string>
+    <string name="app_logo_description">Application logo</string>
+    <!-- Allows the user to return to the menu while preserving the cart. -->
+    <string name="continue_shopping">Continue Shopping</string>
+
 </resources>
