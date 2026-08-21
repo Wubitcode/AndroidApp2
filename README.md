@@ -1,3 +1,7 @@
+<img width="206" height="476" alt=" Order Confirmation" src="https://github.com/user-attachments/assets/a0bafb41-1705-46dc-bc3a-7872f7824b03" />
+<img width="215" height="472" alt=" Shopping Cart" src="https://github.com/user-attachments/assets/43efdf65-5cdc-4f70-9437-3ede713b171e" />
+<img width="208" height="464" alt="Coffee Details" src="https://github.com/user-attachments/assets/d772392c-b9eb-4c41-be8e-63bbc4d68997" />
+<img width="221" height="478" alt="Coffee Menu" src="https://github.com/user-attachments/assets/0e821595-703c-4f33-9e43-d17141982219" />
 AndroidApp2 – Tim Hortons Coffee App
 
 AndroidApp2 is an Android application created for MWD3B – Android Development, Assignment 4. 
